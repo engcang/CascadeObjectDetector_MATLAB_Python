@@ -15,9 +15,9 @@
   ~~~MATLAB
   >>imageLabeler
   ~~~
-  </br>
+  </br></br>
   Using **"Load"**, load images including object you want to detect</br>
-  and define **"ROI"** with Rectangle form
+and define **"ROI"** with Rectangle form
   <p align="left">
   <img src="https://github.com/engcang/image-files/blob/master/opencv/labeler.png" width="600" hspace="100"/>
   </p></br>
@@ -35,11 +35,13 @@
   trainingData = objectDetectorTrainingData(gTruth,'ImageFormat','jpg'); % image labeler Result exported into workspace as 'gTruth'
 
   positiveInstances = trainingData(:,1:2);
-  imDir = fullfile('./tunnel');
+  imDir = fullfile('./imagefolder');
   addpath(imDir);
 
-  negativeFolder = fullfile('./OTHERS');
+  negativeFolder = fullfile('./negativeimagefolder');
   negativeImages = imageDatastore(negativeFolder);
   trainCascadeObjectDetector('name.xml',positiveInstances, negativeFolder,'FalseAlarmRate',0.1,'NumCascadeStages',5,'FeatureType','Haar');
   % featuretype important, 'HOG' type cannot be used in python from OpenCV 3.x version
   ~~~
+  Code train image detector with Positive Images and Negative Images into _**.xml**_ result file </br>
+  'FeatureType' can differ the result and 'HOG'(default) type cannot be used in python from OpenCV 3.X version
