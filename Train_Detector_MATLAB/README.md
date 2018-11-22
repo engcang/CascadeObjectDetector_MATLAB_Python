@@ -22,7 +22,7 @@ and define **"ROI"** with Rectangle form
   <img src="https://github.com/engcang/image-files/blob/master/opencv/labeler.png" width="600" hspace="100"/>
   </p></br>
   
-  Drag the ROI on images and then **"Export Labels" "To workspace"**
+  Drag the ROI on images and then **"Export Labels" "To workspace"** (for later, save the session is recommended)
   <p align="left">
   <img src="https://github.com/engcang/image-files/blob/master/opencv/roi.png" width="600" hspace="100"/>
   </p>
@@ -44,4 +44,10 @@ and define **"ROI"** with Rectangle form
   % featuretype important, 'HOG' type cannot be used in python from OpenCV 3.x version
   ~~~
   Code train image detector with Positive Images and Negative Images into _**.xml**_ result file </br>
-  'FeatureType' can differ the result and 'HOG'(default) type cannot be used in python from OpenCV 3.X version
+  'FeatureType' can differ the result and 'HOG'(default) type cannot be used in python from OpenCV 3.X version<br><br>
+
+## Result
++ Detection code is available [here]()
+  <p align="center">
+  <img src="https://github.com/engcang/image-files/blob/master/opencv/Detected.gif" width="600" hspace="0"/>
+  </p></br>
