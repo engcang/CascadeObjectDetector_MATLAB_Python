@@ -21,7 +21,7 @@
 
   def detecting(image):
       scale=1.2 # resize .*100%, smaller detect more but take longer
-      minNeighbors=6 # when higer, higer quality, less detection
+      minNeighbors=6 # when higher, higher quality, less detection
       detected_img = detector_start.detectMultiScale(image,scale,minNeighbors)
       for (x,y,w,h) in detected_img:
           cv2.rectangle(image, (x,y), (x+w,y+h),(100,255,0), 2)
