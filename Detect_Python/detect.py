@@ -11,22 +11,16 @@ import time
 
 cap = cv2.VideoCapture(1)
 detector_start = cv2.CascadeClassifier('start.xml')
-detector_flower = cv2.CascadeClassifier('flowerpot.xml')
-detector_experi = cv2.CascadeClassifier('experiment.xml')
-detector_toilet = cv2.CascadeClassifier('toilet.xml')
-detectors=[detector_start, detector_flower, detector_experi, detector_toilet]
-Colors=[(0,0,255),(255,0,50),(30,30,30),(50,255,0)]
-Texts=['start','flower','experi','toilet']
-time.sleep(1)
+time.sleep(1) #wait 1 second till camera data comes in
 
 def detecting(image):
     scale=1.2 # resize .*100%, smaller detect more but take longer
-    minNeighbors=6 # higer, higer quality, less detection
-    for i in range(0,4):
-        detected_img = detectors[i].detectMultiScale(image,scale,minNeighbors)
-        for (x,y,w,h) in detected_img:
-            cv2.rectangle(image, (x,y), (x+w,y+h),Colors[i], 2)
-            cv2.putText(image,Texts[i],(x-5,y-5),cv2.FONT_HERSHEY_SIMPLEX,0.3,Colors[i], 2)
+    minNeighbors=6 # when higer, higer quality, less detection
+    detected_img = detectors[i].detectMultiScale(image,scale,minNeighbors)
+    for (x,y,w,h) in detected_img:
+        cv2.rectangle(image, (x,y), (x+w,y+h),(100,255,0), 2)
+        cv2.putText(image,'Detected',(x-5,y-5),cv2.FONT_HERSHEY_SIMPLEX,0.3,(100,255,0), 2)
+
 while 1:
     a=time.time()
     ret, image = cap.read()
