@@ -52,3 +52,6 @@ and define **"ROI"** with Rectangle form
   <p align="center">
   <img src="https://github.com/engcang/image-files/blob/master/opencv/Detected.gif" width="600" hspace="0"/>
   </p></br>
+  <p align="center">
+  <img src="https://github.com/engcang/image-files/blob/master/opencv/detected_py.gif" width="600" hspace="0"/>
+  </p></br>
