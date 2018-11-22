@@ -5,10 +5,13 @@
 
 ## Train Detector using MATLAB [Computer Vision System Toolbox](https://kr.mathworks.com/help/vision/index.html)
 + Detail explanation from public homepage [here](https://kr.mathworks.com/help/vision/ug/train-a-cascade-object-detector.html?s_eid=PSM_13069)
-+ Train detector makes result file in _**.xml**_ form [here]()
++ Train detector makes result file in _**.xml**_ form [here](https://github.com/engcang/CascadeObjectDetector_MATLAB_Python/tree/master/Train_Detector_MATLAB)
 </br></br>
 
 ## ● Detect object using trained detector above
 + [MATLAB version]()
 + [Python version]()
-</br>
+</br></br>
+
+## ● Using Detector and OpenCV Color detection Overlapped
++ Using HSV color system, find wanted object in particular HSV color range within Detected Image [here]()
