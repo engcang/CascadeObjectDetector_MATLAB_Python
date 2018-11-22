@@ -47,7 +47,8 @@ and define **"ROI"** with Rectangle form
   'FeatureType' can differ the result and 'HOG'(default) type cannot be used in python from OpenCV 3.X version<br><br>
 
 ## Result
-+ Detection code is available [here]()
++ Detection code is available [here for MATLAB](https://github.com/engcang/CascadeObjectDetector_MATLAB_Python/tree/master/Detect_MATLAB)
++ and [here for Python](https://github.com/engcang/CascadeObjectDetector_MATLAB_Python/tree/master/Detect_Python)
   <p align="center">
   <img src="https://github.com/engcang/image-files/blob/master/opencv/Detected.gif" width="600" hspace="0"/>
   </p></br>
