@@ -9,8 +9,8 @@
 </br></br>
 
 ## ● Detect object using trained detector above
-+ [MATLAB version]()
-+ [Python version]()
++ [MATLAB version](https://github.com/engcang/CascadeObjectDetector_MATLAB_Python/tree/master/Detect_MATLAB)
++ [Python version](https://github.com/engcang/CascadeObjectDetector_MATLAB_Python/tree/master/Detect_Python)
 </br></br>
 
 ## ● Using Detector and OpenCV Color detection Overlapped
