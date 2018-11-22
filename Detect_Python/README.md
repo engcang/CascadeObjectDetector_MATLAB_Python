@@ -42,9 +42,9 @@
 
 2.make detector handler using _**'cv2.CascadeClassifier('name.xml')'**_ <br><br>
 
-3.and detect image using _**'detector_start.detectMultiScale(image,scale,minNeighbors)'**_ it yields _**'detected_img'**_ which is in rectangle form (x_start_point,y_start_point,width,height) <br><br><br>
+3.and detect image using _**'detector_start.detectMultiScale(image,scale,minNeighbors)'**_ it yields _**'detected_img'**_ which is in rectangle form (x_start_point,y_start_point,width,height) <br><br>
 
-4.using _**cv2.rectangle**_ and _**cv2.putText**_, showing detected part of image
+4.using _**cv2.rectangle**_ and _**cv2.putText**_, showing detected part of image <br><br><br>
 
   <p align="center">
   <img src="https://github.com/engcang/image-files/blob/master/opencv/detected_py.gif" width="600" hspace="0"/>
