@@ -16,7 +16,7 @@ time.sleep(1) #wait 1 second till camera data comes in
 def detecting(image):
     scale=1.2 # resize .*100%, smaller detect more but take longer
     minNeighbors=6 # when higer, higer quality, less detection
-    detected_img = detectors[i].detectMultiScale(image,scale,minNeighbors)
+    detected_img = detector_start.detectMultiScale(image,scale,minNeighbors)
     for (x,y,w,h) in detected_img:
         cv2.rectangle(image, (x,y), (x+w,y+h),(100,255,0), 2)
         cv2.putText(image,'Detected',(x-5,y-5),cv2.FONT_HERSHEY_SIMPLEX,0.3,(100,255,0), 2)
