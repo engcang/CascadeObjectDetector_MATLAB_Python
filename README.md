@@ -9,6 +9,6 @@
 </br></br>
 
 ## ● Detect object using trained detector above
-+ ● [MATLAB version]()
-+ ● [Python version]()
++ [MATLAB version]()
++ [Python version]()
 </br>
