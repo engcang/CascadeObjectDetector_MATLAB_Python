@@ -38,7 +38,7 @@
   ~~~
 <br>
 
-1.For me, used OpenCV to get and consequtive images <br><br>
+1.For me, used OpenCV to get consecutive images <br><br>
 
 2.make detector handler using _**'cv2.CascadeClassifier('name.xml')'**_ <br><br>
 
